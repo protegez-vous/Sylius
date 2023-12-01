@@ -22,7 +22,7 @@ final class SortByExtensionSpec extends ObjectBehavior
 {
     function it_extends_twig_extensions(): void
     {
-        $this->shouldHaveType(\Twig_Extension::class);
+        $this->shouldHaveType(Twig\Extension\AbstractExtension::class);
     }
 
     function it_sorts_in_ascending_order_by_default(

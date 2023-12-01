@@ -19,7 +19,7 @@ final class PercentageExtensionSpec extends ObjectBehavior
 {
     function it_is_twig_extension(): void
     {
-        $this->shouldHaveType(\Twig_Extension::class);
+        $this->shouldHaveType(Twig\Extension\AbstractExtension::class);
     }
 
     function it_returns_float_number_as_percentage(): void

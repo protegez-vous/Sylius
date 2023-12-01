@@ -20,7 +20,7 @@ final class CountryNameExtensionSpec extends ObjectBehavior
 {
     function it_is_a_twig_extension(): void
     {
-        $this->shouldHaveType(\Twig_Extension::class);
+        $this->shouldHaveType(Twig\Extension\AbstractExtension::class);
     }
 
     function it_translates_country_iso_code_into_name(): void
